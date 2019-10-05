@@ -1,6 +1,7 @@
 import React from 'react';
 import getWeather from '../../utils/GetWeather';
 import SearchBar from '../SearchBar/SearchBar.js';
+import Forecast from '../Forecast/Forecast.js';
 
 class App extends React.Component {
 	constructor(props) {
@@ -27,7 +28,10 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<SearchBar getWeather={this.getWeather}/>
+			<div className="App">
+				<Forecast forecast={this.state.forecasts}/>
+				<SearchBar getWeather={this.getWeather}/>
+			</div>
 		);
 	}
 

@@ -24,7 +24,7 @@ class SearchBar extends React.Component {
 					<input placeholder="Where would you like the forecast of?" onChange={this.handleLocationChange}/>
 				</div>
 				<div className="SearchBar-submit" onClick={this.handleSearch}>
-					<a>Get Forecast</a>
+					Get Forecast
 				</div>
 			</div>
 		);
