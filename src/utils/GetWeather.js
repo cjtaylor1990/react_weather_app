@@ -2,7 +2,7 @@ import Keys from './api_key.js'
 
 const getWeather = {
 	async fetchWeather(place) {
-		let endpoint = 'http://api.weatherstack.com/current?access_key=' + Keys.weather_key + '&query=' + place
+		let endpoint = 'http://api.weatherstack.com/current?access_key=' + Keys.weather_key + '&query=' + place + '&units=f'
 
 		try {
 			let response = await fetch(endpoint);

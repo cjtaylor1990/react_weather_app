@@ -2,6 +2,7 @@ import React from 'react';
 import getWeather from '../../utils/GetWeather';
 import SearchBar from '../SearchBar/SearchBar.js';
 import Forecast from '../Forecast/Forecast.js';
+import './App.css';
 
 class App extends React.Component {
 	constructor(props) {
@@ -21,9 +22,11 @@ class App extends React.Component {
 	}
 
 	async getWeather(place){
-		let forecasts = await getWeather.fetchWeather(place);
-		await this.setStateAsync({forecasts:forecasts});
-		console.log(this.state.forecasts);
+		if (place) {
+			let forecasts = await getWeather.fetchWeather(place);
+			await this.setStateAsync({forecasts:forecasts});
+			console.log(this.state.forecasts);
+		}
 	}
 
 	render() {

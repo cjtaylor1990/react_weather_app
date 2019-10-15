@@ -1,0 +1,25 @@
+* {
+	box-sizing: border-box;
+}
+
+.Forecast {
+	background-color: blue;
+	width: 50%;
+	display: inline-flex;
+	color: white;
+	justify-content: space-around;
+	align-items: center;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+}
+
+.Forecase-picture {
+	padding: 0.5em 0 0.5em 0;
+}
+.Forecast-picture img {
+	width: 10em;
+	height: 10em;
+	border: 2px;
+	border-style: solid;
+	border-color: white;
+}
