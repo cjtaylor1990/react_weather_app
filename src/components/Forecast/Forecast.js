@@ -11,9 +11,9 @@ class Forecast extends React.Component {
 					<img src={this.props.forecast.icon} alt={this.props.location}/>
 				</div>
 				<div className="Forecast-info">
-					<h1>{this.props.forecast.location}</h1>
-					<h2>{this.props.forecast.temperature}</h2>
-					<h2>{this.props.forecast.time}</h2>
+					<p>{this.props.forecast.location}</p>
+					<p>{this.props.forecast.temperature}</p>
+					<p>{this.props.forecast.time}</p>
 				</div>
 			</div>
 		);
