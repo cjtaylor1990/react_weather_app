@@ -25,7 +25,6 @@ class App extends React.Component {
 		if (place) {
 			let forecasts = await getWeather.fetchWeather(place);
 			await this.setStateAsync({forecasts:forecasts});
-			console.log(this.state.forecasts);
 		}
 	}
 

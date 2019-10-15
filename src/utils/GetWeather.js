@@ -11,7 +11,7 @@ const getWeather = {
 				return {
 					location: data.location.name,
 					time: data.location.localtime,
-					temperature: data.current.temperature,
+					temperature: data.current.temperature.toString()+" F",
 					icon: data.current.weather_icons[0],
 				};
 			} else {

@@ -4,7 +4,6 @@ import './Forecast.css';
 class Forecast extends React.Component {
 
 	render() {
-		console.log(this.props.forecast);
 		return (
 			<div className="Forecast">
 				<div className="Forecast-picture">
