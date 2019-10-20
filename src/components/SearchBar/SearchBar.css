@@ -2,9 +2,11 @@
 	box-sizing: border-box;
 }
 
-.SearchBar div {
-	background-color: black;
+.SearchBar {
+	background-image: linear-gradient(#bdbfbf, #707575);
 	width: 50%;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
 }
 
 .SearchBar-field {
@@ -18,8 +20,6 @@
 }
 
 .SearchBar-submit {
-	border-bottom-right-radius: 25px;
-	border-bottom-left-radius: 25px;
 	text-align: center;
 	padding-bottom: 0.5em;
 

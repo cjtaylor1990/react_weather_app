@@ -3,14 +3,28 @@
 }
 
 .Forecast {
-	background-color: blue;
 	width: 50%;
+	display: block;
+	background-image: linear-gradient(#6fd8ed, #117488);
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+}
+
+.Forecast-title {
+	background-image: linear-gradient(#707575, #bdbfbf);
+	text-align: center;
+	width: 100%;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	color: white;
+}
+
+.Forecast-body {
+	width: 100%;
 	display: inline-flex;
 	color: white;
 	justify-content: space-around;
 	align-items: center;
-	border-top-right-radius: 25px;
-	border-top-left-radius: 25px;
 	padding: 1em;
 }
 
